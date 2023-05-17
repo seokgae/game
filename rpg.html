@@ -5,11 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="rpg.css">
+    <script src="room.js"></script>
+    <script src="class_player.js"></script>
+    <script src="class_npc.js"></script>
+    <script src="class_bag.js"></script>
+    <script src="class_monster.js"></script>
     <script src="common.js"></script>
-    <script src="rpg.js"></script>
-    
+    <script src="function.js"></script> 
+    <script src="main.js"></script>    
 </head>
 <body>
-    
+    <div id="main">
+        <div>
+            <h4>playerstat</h4>
+            <textarea id="player_txt" readonly="readonly"></textarea><br>        
+            <input type="button" id="turn_indicator" value="턴 :0">
+            <input type="button" id="turn_advance" value="대기">
+            <input type="button" id="battlestart" value="전투시작">
+            <input type="button" id="bag" value="가방"> <div id="bag_popup"></div>
+            <h4>roominfo</h4>
+            <textarea id="room_txt" readonly="readonly"></textarea>   
+            <div id="moveset">
+                <input type="button" id="north" value="north" onclick="moveRoom(elf, 2);">
+                <input type="button" id="east" value="east" onclick="moveRoom(elf, 3);">
+                <input type="button" id="south" value="south" onclick="moveRoom(elf, 4);">
+                <input type="button" id="west" value="west" onclick="moveRoom(elf, 5);">
+            </div>         
+        </div>
+        <div id="wat">
+            <h4>battlestat</h4>
+            <textarea id="battle_txt" readonly="readonly"></textarea>
+            <h4>drop table</h4>
+            <div id="drop_table"></div>
+        </div>
+        <div >
+            <h4 id="h44">monsterstat</h4>
+            <div id="object_monster"></div>
+            <h4 id="h45">NPC</h4>
+            <div id="object_npc"></div>
+        </div>
+    </div> 
 </body>
 </html>
