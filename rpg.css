@@ -1,0 +1,25 @@
+#main {
+    display: flex;
+}
+
+textarea {
+    margin-right:20px;
+    width:400px;
+    height:300px;
+}
+
+h4 {
+    margin:0px;
+}
+
+#player_txt, #room_txt, #monster_txt {
+    width:250px;
+    height:150px;
+}
+
+#object_monster > div {
+    height:100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 5px;
+}
