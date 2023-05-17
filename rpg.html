@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="rpg.css">
     <script src="common.js"></script>
+    <script src="class.js"></script>
+    <script src="textfield.js"></script>
     <script src="rpg.js"></script>
     
 </head>
 <body>
-    
+    <div id="playerinfo">
+        <div><h4>playerstat</h4>
+            <textarea id="player_txt"></textarea>
+        </div>
+        <div><h4>battlestat</h4>
+            <textarea id="battle_txt"></textarea>
+        </div>
+        <div><h4>monsterstat</h4>
+            <textarea id="monster_txt"></textarea>
+        </div>
+    </div>
+    <div id="battelstat">
+        
+    </div>
+    <div id="monsterinfo">
+        
+    </div>
+    <div>
+        <input type="button" id="battlestart" value="전투시작" onclick="Battle();">
+    </div>
 </body>
 </html>
