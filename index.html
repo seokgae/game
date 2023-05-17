@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rpg.css">
+    <script src="room.js"></script>
+    <script src="class_player.js"></script>
+    <script src="class_npc.js"></script>
+    <script src="class_bag.js"></script>
+    <script src="class_monster.js"></script>
+    <script src="common.js"></script>
+    <script src="function.js"></script> 
+    <script src="main.js"></script>    
+</head>
+<body> 
+    <div id="main">
+        <div>
+            <h4>playerstat</h4>
+            <textarea id="player_txt" readonly="readonly"></textarea><br>        
+            <input type="button" id="turn_indicator" value="턴 :0">
+            <input type="button" id="turn_advance" value="대기">
+            <input type="button" id="battlestart" value="전투시작">
+            <input type="button" id="bag" value="가방"> <div id="bag_popup"></div>
+            <h4>roominfo</h4>
+            <textarea id="room_txt" readonly="readonly"></textarea>   
+            <h4>Map</h4>         
+            <div id="map">
+                <div id="map_1row">              
+                    <div id="box_north" class="box">▲</div>                             
+                </div>
+                <div id="map_2row">                
+                    <div id="box_hid"></div>
+                    <div id="line_north"></div>
+                    <div id="box_hid"></div>               
+                </div>
+                <div id="map_3row">
+                    <div id="box_west" class="box">◀</div>
+                    <div id="line_west"></div>
+                    <div id="main_box" class="box"></div>
+                    <div id="line_east"></div>
+                    <div id="box_east" class="box">▶</div>
+                </div>
+                <div id="map_4row">                
+                    <div id="box_hid"></div>
+                    <div id="line_south"></div>
+                    <div id="box_hid"></div>                
+                </div>
+                <div id="map_5row">                              
+                    <div id="box_south" class="box">▼</div>               
+                </div>
+            </div>
+        </div>
+        <div id="wat">
+            <h4>battlestat</h4>
+            <textarea id="battle_txt" readonly="readonly"></textarea>
+            <h4>drop table</h4>
+            <div id="drop_table"></div>
+        </div>
+        <div >
+            <h4 id="h44">monsterstat</h4>
+            <div id="object_monster"></div>
+            <h4 id="h45">NPC</h4>
+            <div id="object_npc"></div>
+        </div>
+    </div> 
+    
+</body>
+</html>
