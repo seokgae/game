@@ -5,11 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="rpg.css">
     <script src="common.js"></script>
+    <script src="class.js"></script>
+    <script src="function.js"></script>
+    <script src="room.js"></script>
     <script src="rpg.js"></script>
     
 </head>
 <body>
-    
+    <div id="main">
+        <div>
+            <h4>playerstat</h4>
+            <textarea id="player_txt" readonly="readonly"></textarea>
+            <h4>roominfo</h4>
+            <textarea id="room_txt" readonly="readonly"></textarea>            
+        </div>
+        <div><h4>battlestat</h4>
+            <textarea id="battle_txt" readonly="readonly"></textarea>
+        </div>
+        <div><h4>monsterstat</h4>
+            <textarea id="monster_txt" readonly="readonly"></textarea>
+        </div>
+    </div>
+    <div id="">
+        
+    </div>
+    <div id="">
+        
+    </div>
+    <div>
+        <input type="button" id="turn_indicator" value="turn:0">
+        <input type="button" id="battlestart" value="전투시작" onclick="Battle();">
+        <input type="button" id="battlestart" value="로드" onclick="LoadInfo();">
+    </div>
+    <div id="moveset">
+        <input type="button" id="north" value="north" onclick="moveRoom(2, elf);">
+        <input type="button" id="east" value="east" onclick="moveRoom(3, elf);">
+        <input type="button" id="south" value="south" onclick="moveRoom(4, elf);">
+        <input type="button" id="west" value="west" onclick="moveRoom(5, elf);">
+    </div>
 </body>
 </html>
